@@ -16,10 +16,12 @@ https://beta.flowup.com​/api​/public​/contactManagement​/contactList
 
 Query Parameters
 
-1. list_name
-2. list_tag
-3. country_code
-4. campaign_id
+Parameter | Description
+------------ | -------------
+list_name | List name which you want to create
+list_tag | Tags help in searching for a contact list. Multiple lists can be grouped and identified by using the same tags.
+country_code | Helps in overriding your contacts with the selected country code.
+campaign_id | Add Id of pre-created campaign for this new contact list.
 
 ```
 example: OrderedMap { "list_name": "FlowupAPIDocContacts", "list_tag": List [ OrderedMap { "name": " " } ], "country_code": "+1", "campaign_id": null }
