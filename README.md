@@ -23,7 +23,7 @@ list_tag | Tags help in searching for a contact list. Multiple lists can be grou
 country_code | Helps in overriding your contacts with the selected country code.
 campaign_id | Add Id of pre-created campaign for this new contact list.
 
-*Example: *
+**Example:**
 
 ```
 {
