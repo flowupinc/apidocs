@@ -1,0 +1,189 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://beta.flowup.com'
+    description: ''
+    variables: {}
+info:
+  version: v1
+  title: Public APIs
+  description: ''
+  termsOfService: ''
+  contact: {}
+  license:
+    name: ''
+paths:
+  /api/public/contactManagement/contactList:
+    post:
+      tags: [
+        "Contact"
+      ]
+      summary: Create Contact list
+      operationId: CreateContactlist
+      parameters:
+        - name: x-api-key
+          in: header
+          required: true
+          style: simple
+          schema:
+            type: string
+            example: YourApiKey
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                list_name: 'FlowupAPIDocContacts'
+                list_tag:
+                  - name: ' '
+                country_code: '+1'
+                campaign_id: null
+            example: |-
+              {
+                  "list_name": "FlowupAPIDocContacts",
+                  "list_tag": [{"name" : " "}],
+                  "country_code": "+1",
+                  "campaign_id": null
+              }
+  /api/public/contactManagement/contact:
+    post:
+      tags: [
+          "Contact"
+      ]  
+      summary: Create contact
+      operationId: Createcontact
+      parameters:
+        - name: x-api-key
+          in: header
+          required: true
+          style: simple
+          schema:
+            type: string
+            example: YourApiKey
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                contact_list_id: 453
+                title: ''
+                first_name: ''
+                middle_name: ''
+                last_name: ''
+                email: ''
+                gender: ''
+                state: ''
+                city: ''
+                postal_code: ''
+                address: ' '
+                phone_code: '+1'
+                phone_number: '2012022124'
+                is_dnc_check: false
+                is_duplicate_check: false
+            example: |-
+              {
+                  "contact_list_id": 453,
+                  "title": "",
+                  "first_name": "",
+                  "middle_name": "",
+                  "last_name": "",
+                  "email": "",
+                  "gender": "",
+                  "state": "",
+                  "city": "",
+                  "postal_code": "",
+                  "address": " ",
+                  "phone_code": "+1",
+                  "phone_number": "2012022124",
+                  "is_dnc_check":false,
+                  "is_duplicate_check":false
+              }
+  /api/public/contactManagement/contactDnc:
+    post:
+      tags: [
+        "Contact"
+      ]
+      summary: Create DNC Contact
+      operationId: CreateContactdnc
+      parameters:
+        - $ref: '#/components/parameters/x-api-key'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                campaign_id: 161
+                action_type: add
+                phone_numbers: '2012022123'
+            example: |-
+                {
+                    "campaign_id":161,
+                    "action_type":"add",
+                    "phone_numbers":"2012022123"
+                }
+  /api/public/contactManagement/contactClose:
+    post:
+      tags: [
+        "Contact"
+      ]
+      summary: Create Close Contact
+      operationId: CreateContactclose
+      parameters:
+        - $ref: '#/components/parameters/x-api-key'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                campaign_id: 161
+                action: Add
+                phone_numbers: '2012022123'
+            example: |-
+              {
+                  "campaign_id":161,
+                  "action":"Add",
+                  "phone_numbers":"2012022123"
+              }
+components:
+  parameters:
+    x-api-key:
+      name: x-api-key
+      in: header
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: YourApiKey
+security: []
+tags: [
+    {
+        "name" : "Contact",
+        "description": "Play With your contacts"
+    }
+]
+externalDocs:
+  url: ''
+  description: ''
