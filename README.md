@@ -23,6 +23,17 @@ list_tag | Tags help in searching for a contact list. Multiple lists can be grou
 country_code | Helps in overriding your contacts with the selected country code.
 campaign_id | Add Id of pre-created campaign for this new contact list.
 
+*Example: *
+
 ```
-example: OrderedMap { "list_name": "FlowupAPIDocContacts", "list_tag": List [ OrderedMap { "name": " " } ], "country_code": "+1", "campaign_id": null }
+{
+  "list_name": "FlowupAPIDocContacts",
+  "list_tag": [
+    {
+      "name": " "
+    }
+  ],
+  "country_code": "+1",
+  "campaign_id": null
+}
 ```
