@@ -88,7 +88,7 @@ is_duplicate_check | Do you want check that contact number is duplicate or not?
 ```
 
 ## Create DNC Contact
-This endpoint allows you to Create Contact using your APIKey.
+This endpoint allows you to Add or Remove DNC Contact using your APIKey.
 
 **HTTP Request**
 ```
