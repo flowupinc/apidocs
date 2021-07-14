@@ -86,3 +86,28 @@ is_duplicate_check | Do you want check that contact number is duplicate or not?
   "is_duplicate_check": false
 }
 ```
+
+## Create DNC Contact
+This endpoint allows you to Create Contact using your APIKey.
+
+**HTTP Request**
+```
+https://beta.flowup.com​/api​/public​/contactManagement​/contactDnc
+```
+
+Query Parameters
+
+Parameter | Description
+------------ | -------------
+campaign_id | The Phone Numbers you upload will be automatically added to the pre-created campaign you add here.
+action_type | Choose to Add or Remove the mentioned phone numbers to or from the campaign, respectively..
+phone_numbers | Every two numbers must be separated by commas. For example, 9898989898, 5656565656,.
+
+**Example:**
+```
+{
+  "campaign_id": 123,
+  "action_type": "add",
+  "phone_numbers": "2012022123,2012022345,2012022678"
+}
+```
