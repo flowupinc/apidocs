@@ -87,7 +87,7 @@ is_duplicate_check | Do you want check that contact number is duplicate or not?
 }
 ```
 
-## Create DNC Contact
+## Manage DNC Contact
 This endpoint allows you to Add or Remove DNC Contact using your APIKey.
 
 **HTTP Request**
@@ -112,7 +112,7 @@ phone_numbers | Every two numbers must be separated by commas. For example, 9898
 }
 ```
 
-## Create Close Contact
+## Manage Close Contact
 This endpoint allows you to Add or Remove Close Contact using your APIKey.
 
 **HTTP Request**
