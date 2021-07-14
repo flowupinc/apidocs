@@ -1,4 +1,4 @@
-![Image of Flowup Inc](https://flowup.com/img/logo-black.png)
+![Image of Flowup Inc](https://flowup.com/img/logo-black-github.png)
 
 Flowup API Docs
 
