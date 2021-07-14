@@ -37,3 +37,52 @@ campaign_id | Add Id of pre-created campaign for this new contact list.
   "campaign_id": null
 }
 ```
+
+### Create contact
+This endpoint allows you to Create Contact using your APIKey.
+
+**HTTP Request**
+```
+https://beta.flowup.com​/​api​/public​/contactManagement​/contact
+```
+
+Query Parameters
+
+Parameter | Description
+------------ | -------------
+contact_list_id | Id of Contact List to Store this contact in.
+title | Contact title ex. Mr. or Mrs.
+first_name | Name of you contact.
+middle_name | Middle name of your contact.
+last_name | Last name of your contact.
+email | Email id of your contact
+gender | Gender of your contact. 
+state | State of your contact.
+city | City of your contact.
+postal_code | Postal code of your contact.
+address | Address of your contact.
+phone_code | Phone code of your contact.
+phone_number | Phone Number of your contact.
+is_dnc_check | Do you want check that contact number is in DNC list or not?
+is_duplicate_check | Do you want check that contact number is duplicate or not?
+
+**Example:**
+```
+{
+  "contact_list_id": 123,
+  "title": "Mr",
+  "first_name": "David",
+  "middle_name": "S",
+  "last_name": "Solomon",
+  "email": "david@comapany.com",
+  "gender": "Male",
+  "state": "Texas",
+  "city": "Dallas",
+  "postal_code": "75001",
+  "address": "AMLI 7th Street Station 2601 West 7th St.",
+  "phone_code": "+1",
+  "phone_number": "8178771977",
+  "is_dnc_check": false,
+  "is_duplicate_check": false
+}
+```
