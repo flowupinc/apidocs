@@ -6,7 +6,7 @@ You can play with you Contacts using Flowup API Docs
 
 See it in Action : [API Docs](https://flowup.com/apidocs?utm_source=github&utm_medium=readme)
 
-### Create Contact list
+## Create Contact list
 This endpoint allows you to Create Contact list using your APIKey.
 
 **HTTP Request**
@@ -38,7 +38,7 @@ campaign_id | Add Id of pre-created campaign for this new contact list.
 }
 ```
 
-### Create contact
+## Create contact
 This endpoint allows you to Create Contact using your APIKey.
 
 **HTTP Request**
